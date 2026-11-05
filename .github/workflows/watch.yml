@@ -1,0 +1,46 @@
+name: truck-watch
+
+on:
+  schedule:
+    # каждые 5 минут; если минуты кончаются — поставьте "*/15 * * * *"
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: truck-watch
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Проверить таблицу
+        env:
+          TGW_TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TGW_TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TGW_SHEET_URL: ${{ secrets.SHEET_URL }}
+        run: python watcher.py --once
+
+      - name: Сохранить состояние
+        run: |
+          git config user.name "truck-watch"
+          git config user.email "truck-watch@users.noreply.github.com"
+          git add state.json subscribers.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Изменений нет"
+          else
+            git commit -m "state: $(date -u +%Y-%m-%d_%H:%M)"
+            git pull --rebase --autostash
+            git push
+          fi

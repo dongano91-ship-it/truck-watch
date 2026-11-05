@@ -1,0 +1,12 @@
+# в облаке не нужно
+cache/
+*.log
+__pycache__/
+.venv/
+android-build/
+android-build/tools/
+Polka-launcher.apk
+
+# секреты не должны попасть в репозиторий
+.env
+config.local.json
