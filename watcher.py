@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import colorsys
+import copy
 import io
 import json
 import logging
@@ -49,6 +50,37 @@ REPORT_PATH = BASE / "colors_report.txt"
 MAX_API = "https://platform-api2.max.ru"
 TELEGRAM_API = "https://api.telegram.org"
 USER_AGENT = "Mozilla/5.0 (truck-watch/1.0)"
+
+# Настройки по умолчанию — работают, даже если config.json нет вовсе.
+# Именно поэтому в облако достаточно загрузить один файл скрипта.
+DEFAULT_CONFIG: dict = {
+    "sheet_url": "",
+    "poll_seconds": 60,
+    "cities": [],
+    "plates": [],
+    "filter_mode": "all",
+    "max": {"token": "", "chat_id": "", "insecure_tls": False},
+    "telegram": {"token": "", "chat_id": "", "share": True},
+    "events": {
+        "new_row": False,
+        "arrived": True,
+        "loading": True,
+        "departed": True,
+        "problem": True,
+    },
+    "colors": {
+        "min_saturation": 0.12,
+        "min_value": 0.45,
+        "green_hue": [0.18, 0.46],
+        "yellow_hue": [0.13, 0.19],
+        "red_hue": [[0.0, 0.05], [0.95, 1.0]],
+        "status_exclude": [
+            "сортировка", "№ мл", "город", "дата", "коментарии", "комментарии",
+        ],
+        "red_exclude": ["сортировка", "№ мл", "город", "дата"],
+    },
+    "quiet_hours": [],
+}
 
 log = logging.getLogger("truck-watch")
 
@@ -884,40 +916,71 @@ def calibrate(data: bytes, cfg: dict) -> None:
 # ================================================================ состояние
 
 
+def _merge(base: dict, extra: dict) -> dict:
+    for key, value in extra.items():
+        if isinstance(value, dict) and isinstance(base.get(key), dict):
+            _merge(base[key], value)
+        else:
+            base[key] = value
+    return base
+
+
+def _env_list(name: str) -> list[str]:
+    raw = os.environ.get(name, "").strip()
+    return [part.strip() for part in raw.split(",") if part.strip()]
+
+
 def load_config() -> dict:
-    cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+    """Настройки: по умолчанию → config.json → config.local.json → переменные среды.
+
+    Благодаря умолчаниям в облаке config.json вообще не нужен.
+    """
+    cfg = copy.deepcopy(DEFAULT_CONFIG)
+
+    if CONFIG_PATH.exists():
+        try:
+            _merge(cfg, json.loads(CONFIG_PATH.read_text(encoding="utf-8")))
+        except Exception as exc:  # noqa: BLE001
+            log.warning("config.json не прочитан: %s", exc)
 
     # Секреты держим отдельно: этот файл не попадает в git
     local_path = BASE / "config.local.json"
     if local_path.exists():
         try:
-            local = json.loads(local_path.read_text(encoding="utf-8"))
-            for key, value in local.items():
-                if isinstance(value, dict) and isinstance(cfg.get(key), dict):
-                    cfg[key].update(value)
-                else:
-                    cfg[key] = value
+            _merge(cfg, json.loads(local_path.read_text(encoding="utf-8")))
         except Exception as exc:  # noqa: BLE001
             log.warning("config.local.json не прочитан: %s", exc)
 
-    # В облаке токен, chat_id и ссылка на таблицу приходят из секретов
+    # В облаке всё приходит из секретов
     token = os.environ.get("TGW_TELEGRAM_TOKEN", "").strip()
     chat = os.environ.get("TGW_TELEGRAM_CHAT_ID", "").strip()
     sheet = os.environ.get("TGW_SHEET_URL", "").strip()
-    if token or chat:
-        tg = cfg.setdefault("telegram", {})
-        if token:
-            tg["token"] = token
-        if chat:
-            tg["chat_id"] = chat
+    if token:
+        cfg["telegram"]["token"] = token
+    if chat:
+        cfg["telegram"]["chat_id"] = chat
     if sheet:
         cfg["sheet_url"] = sheet
+
+    plates = _env_list("TGW_PLATES")
+    if plates:
+        cfg["plates"] = plates
+    cities = _env_list("TGW_CITIES")
+    if cities:
+        cfg["cities"] = cities
+
     return cfg
 
 
 def save_config(cfg: dict) -> None:
+    """Пишет конфиг, вырезая токены, чтобы они не попали в репозиторий."""
+    clean = copy.deepcopy(cfg)
+    for channel in ("telegram", "max"):
+        block = clean.get(channel)
+        if isinstance(block, dict):
+            block["token"] = ""
     CONFIG_PATH.write_text(
-        json.dumps(cfg, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        json.dumps(clean, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
 
 
@@ -988,7 +1051,14 @@ def save_state(rows: dict) -> None:
 def fetch(cfg: dict, local_file: str | None) -> bytes:
     if local_file:
         return Path(local_file).read_bytes()
-    return download_sheet(cfg["sheet_url"])
+
+    url = str(cfg.get("sheet_url", "")).strip()
+    if not url:
+        raise RuntimeError(
+            "Не задана ссылка на таблицу. В облаке добавьте секрет TGW_SHEET_URL, "
+            "локально — поле sheet_url в config.json."
+        )
+    return download_sheet(url)
 
 
 def poll_once(cfg: dict, local_file: str | None = None) -> dict:

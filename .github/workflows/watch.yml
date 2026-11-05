@@ -2,7 +2,6 @@ name: truck-watch
 
 on:
   schedule:
-    # каждые 5 минут; если минуты кончаются — поставьте "*/15 * * * *"
     - cron: "*/5 * * * *"
   workflow_dispatch:
 
@@ -30,6 +29,8 @@ jobs:
           TGW_TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TGW_TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TGW_SHEET_URL: ${{ secrets.SHEET_URL }}
+          TGW_PLATES: ${{ secrets.PLATES }}
+          TGW_CITIES: ${{ secrets.CITIES }}
         run: python watcher.py --once
 
       - name: Сохранить состояние
