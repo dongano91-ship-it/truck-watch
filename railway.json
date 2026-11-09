@@ -1,25 +1,8 @@
-{
-  "name": "truck-watch",
-  "regions": ["hnd"],
-  "buildCommand": "",
-  "startCommand": "python watcher.py",
-  "healthcheckPath": "/",
-  "env": [
-    {
-      "key": "PYTHONUNBUFFERED",
-      "value": "1"
-    },
-    {
-      "key": "TGW_SHEET_URL",
-      "value": ""
-    },
-    {
-      "key": "TGW_TELEGRAM_TOKEN",
-      "value": ""
-    },
-    {
-      "key": "TGW_TELEGRAM_CHAT_IDS",
-      "value": ""
-    }
-  ]
+﻿{
+  "build": {
+    "builder": "nixpacks"
+  },
+  "deploy": {
+    "startCommand": "python watcher.py"
+  }
 }
