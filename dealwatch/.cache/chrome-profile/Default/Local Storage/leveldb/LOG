@@ -1,0 +1,8 @@
+2026/11/06-11:28:12.431 3288 Creating DB C:\Users\donga\OneDrive\Documents\deepseek-harness\default-workspace\dealwatch\.cache\chrome-profile\Default\Local Storage\leveldb since it was missing.
+2026/11/06-11:28:12.455 3288 Reusing MANIFEST C:\Users\donga\OneDrive\Documents\deepseek-harness\default-workspace\dealwatch\.cache\chrome-profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/11/06-11:28:35.987 ac8 Level-0 table #5: started
+2026/11/06-11:28:35.996 ac8 Level-0 table #5: 169359 bytes OK
+2026/11/06-11:28:35.999 ac8 Delete type=0 #3
+2026/11/06-11:28:44.338 3288 Level-0 table #7: started
+2026/11/06-11:28:44.345 3288 Level-0 table #7: 61755 bytes OK
+2026/11/06-11:28:44.349 3288 Delete type=0 #4

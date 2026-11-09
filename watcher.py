@@ -29,6 +29,7 @@ import json
 import logging
 import os
 import re
+import socket
 import ssl
 import sys
 import threading
@@ -83,6 +84,22 @@ DEFAULT_CONFIG: dict = {
 }
 
 log = logging.getLogger("truck-watch")
+
+_lock_socket = None
+
+
+def acquire_single_instance(port: int = 47823) -> bool:
+    """Занимает локальный порт. Второй экземпляр не сможет его занять."""
+    global _lock_socket
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        sock.bind(("127.0.0.1", port))
+        sock.listen(1)
+        _lock_socket = sock
+        return True
+    except OSError:
+        sock.close()
+        return False
 
 
 # ================================================================ утилиты
@@ -1107,6 +1124,15 @@ def main() -> int:
         except Exception:
             pass
 
+    # если процесс убьют или он упадёт на уровне C — traceback попадёт в crash.log
+    try:
+        import faulthandler
+
+        _crash = open(BASE / "crash.log", "a", encoding="utf-8")
+        faulthandler.enable(_crash)
+    except Exception:
+        pass
+
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s  %(levelname)-7s %(message)s",
@@ -1171,8 +1197,16 @@ def main() -> int:
             poll_once(cfg, args.file)
             return 0
 
+        # защита от второго экземпляра: два наблюдателя = дубли и конфликт в Telegram
+        if not acquire_single_instance():
+            log.warning(
+                "Уже работает другой экземпляр слежения — этот запуск не нужен."
+            )
+            return 0
+
         interval = args.interval or int(cfg.get("poll_seconds", 60))
         log.info("Старт. Опрос каждые %s сек. Ctrl+C — остановить.", interval)
+        log.info("Процесс %s, Python %s", os.getpid(), sys.version.split()[0])
         log.info("Правки config.json подхватываются без перезапуска.")
 
         if str(cfg.get("telegram", {}).get("token", "")).strip():
@@ -1180,10 +1214,13 @@ def main() -> int:
                 target=subscribe_listener, args=(load_config,), daemon=True
             ).start()
 
+        cycle = 0
         while True:
+            cycle += 1
             try:
                 # перечитываем конфиг: добавленные машины работают сразу
                 cfg = load_config()
+                log.debug("цикл %s", cycle)
                 poll_once(cfg, args.file)
                 interval = args.interval or int(cfg.get("poll_seconds", 60))
             except Exception:
@@ -1193,9 +1230,9 @@ def main() -> int:
     except KeyboardInterrupt:
         log.info("Остановлено пользователем")
         return 0
-    except Exception as exc:  # noqa: BLE001
-        log.error("Фатальная ошибка: %s", exc)
-        return 1
+    except BaseException as exc:  # noqa: BLE001
+        log.error("Фатальная ошибка: %s\n%s", exc, traceback.format_exc())
+        raise
 
 
 if __name__ == "__main__":

@@ -1,0 +1,36 @@
+2026/11/06-11:48:43.102 24b0 Reusing MANIFEST C:\Users\donga\OneDrive\Documents\deepseek-harness\default-workspace\dealwatch\.chrome-profile\Default\IndexedDB\https_www.avito.ru_0.indexeddb.leveldb/MANIFEST-000001
+2026/11/06-11:48:43.102 24b0 Recovering log #18
+2026/11/06-11:48:43.102 24b0 Reusing old log C:\Users\donga\OneDrive\Documents\deepseek-harness\default-workspace\dealwatch\.chrome-profile\Default\IndexedDB\https_www.avito.ru_0.indexeddb.leveldb/000018.log 
+2026/11/06-11:48:43.102 24b0 Delete type=2 #16
+2026/11/06-11:48:43.259 1450 Level-0 table #23: started
+2026/11/06-11:48:43.264 1450 Level-0 table #23: 926 bytes OK
+2026/11/06-11:48:43.266 1450 Delete type=0 #18
+2026/11/06-11:48:43.266 24b0 Manual compaction at level-0 from '\x00\x0e\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0f\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0e\x00\x00\x05' @ 628 : 1
+2026/11/06-11:48:43.267 24b0 Compacting 1@0 + 1@1 files
+2026/11/06-11:48:43.268 24b0 Generated table #24@0: 188 keys, 3239 bytes
+2026/11/06-11:48:43.268 24b0 Compacted 1@0 + 1@1 files => 3239 bytes
+2026/11/06-11:48:43.270 24b0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/11/06-11:48:43.271 24b0 Delete type=2 #23
+2026/11/06-11:48:43.271 24b0 Manual compaction at level-0 from '\x00\x0e\x00\x00\x05' @ 628 : 1 .. '\x00\x0f\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/11/06-11:49:03.874 1450 Level-0 table #26: started
+2026/11/06-11:49:03.877 1450 Level-0 table #26: 930 bytes OK
+2026/11/06-11:49:03.879 1450 Delete type=2 #20
+2026/11/06-11:49:03.879 1450 Delete type=0 #22
+2026/11/06-11:49:03.879 24b0 Manual compaction at level-0 from '\x00\x0f\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x10\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0f\x00\x00\x05' @ 647 : 1
+2026/11/06-11:49:03.880 24b0 Compacting 1@0 + 1@1 files
+2026/11/06-11:49:03.881 24b0 Generated table #27@0: 193 keys, 3257 bytes
+2026/11/06-11:49:03.882 24b0 Compacted 1@0 + 1@1 files => 3257 bytes
+2026/11/06-11:49:03.883 24b0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/11/06-11:49:03.884 24b0 Delete type=2 #26
+2026/11/06-11:49:03.884 24b0 Manual compaction at level-0 from '\x00\x0f\x00\x00\x05' @ 647 : 1 .. '\x00\x10\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/11/06-11:49:11.448 24b0 Level-0 table #29: started
+2026/11/06-11:49:11.450 24b0 Level-0 table #29: 942 bytes OK
+2026/11/06-11:49:11.452 24b0 Delete type=2 #24
+2026/11/06-11:49:11.452 24b0 Delete type=0 #25
+2026/11/06-11:49:11.453 24b0 Manual compaction at level-0 from '\x00\x10\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x11\x00\x00\x00' @ 0 : 0; will stop at '\x00\x10\x00\x00\x05' @ 690 : 1
+2026/11/06-11:49:11.453 24b0 Compacting 1@0 + 1@1 files
+2026/11/06-11:49:11.455 24b0 Generated table #30@0: 200 keys, 3331 bytes
+2026/11/06-11:49:11.455 24b0 Compacted 1@0 + 1@1 files => 3331 bytes
+2026/11/06-11:49:11.457 24b0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/11/06-11:49:11.457 24b0 Delete type=2 #29
+2026/11/06-11:49:11.458 24b0 Manual compaction at level-0 from '\x00\x10\x00\x00\x05' @ 690 : 1 .. '\x00\x11\x00\x00\x00' @ 0 : 0; will stop at (end)

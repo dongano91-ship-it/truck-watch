@@ -1,0 +1,21 @@
+{
+  "name": "dealwatch",
+  "regions": ["hnd"],
+  "buildCommand": "",
+  "startCommand": "python dealwatch.py",
+  "healthcheckPath": "/",
+  "env": [
+    {
+      "key": "PYTHONUNBUFFERED",
+      "value": "1"
+    },
+    {
+      "key": "DEALWATCH_TELEGRAM_TOKEN",
+      "value": ""
+    },
+    {
+      "key": "DEALWATCH_TELEGRAM_CHAT_IDS",
+      "value": ""
+    }
+  ]
+}

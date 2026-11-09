@@ -1,0 +1,9 @@
+﻿{
+    "gameDVR":  1,
+    "appCapture":  null,
+    "layers":  null,
+    "startup":  {
+                    "ut":  "\"C:\\Users\\donga\\AppData\\Roaming\\utorrent\\uTorrent.exe\"  /MINIMIZED",
+                    "MicrosoftEdgeAutoLaunch_2A686DDFBAD4903EBDB93CBBB6141428":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --no-startup-window --win-session-start"
+                }
+}

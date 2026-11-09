@@ -1,0 +1,6 @@
+Chrome: Chrome/157.0.8103.39
+AVITO -> {"title":"Авито — Объявления на сайте Авито","items":23,"prices":["27990","27690","27546","32990","32990"],"url":"https://www.avito.ru/all/telefony/mobilnye_telefony/apple/iphone_15-ASgBAgICA0SywA2SoO0RtMANzqs5sMENiPw3?context=H4sIAAAAAAAA_0yQy3LbIABF_8XbLopkK4mV6aJGEYMGkxGuEWgnINYjILvRy06n_96R40yzhHuZezhF6IV_utAD4UIf395edF8f28VjF67uHsIFbnuNXdwYZEdlp_rZTrV2fFIobnI-1SSe6lxU83mQgp2UH2jcnDTu4Q7IMe0M-glIlI4GEUzREyBNOqzRFkjCSooIgRErDfwGyD0re3gBRLCyRxsgSdr1KALyntUGrgDZl4Ac0o7C70BG6XjtbMvpd3_SqBqV25fbXwIOl0Dj-qxxu-lkRq3K-GDiD27peKeW5iN3zGrftsrmVrf0P7cLRu28SkGvUohf5rfzHxWyQ7Gkc0e9eFcHZ5Px9zl_nh21sZeLJBAQ3wmYfGHitz1aGcRbtUyC3Z5p3BxXFJ41dudR-jEosvVwu_e3zZNHo8163jWIrz75QXJ19ACISMfZiSSs-eTLOCjQ-vW2_55n8UX61UE7_lqIxMol07j1zGGHfywe__4bAKWokDP1AQAA","bodyLen":1646}
+WB -> ERR 'charmap' codec can't encode character '\u2011' in position 24: character maps to <undefined>
+OZON -> {"title":"iphone 15 - купить на OZON","url":"https://www.ozon.ru/category/smartfony-15502/apple-26303000/?__rr=1&abt_att=1&brand_was_predicted=true&category_was_predicted=true&deny_category_prediction=true&text=iphone+15","body":""}
+
+AVITO_BODY:

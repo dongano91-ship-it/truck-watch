@@ -1,12 +1,11 @@
 @echo off
 chcp 65001 >nul
 cd /d "%~dp0"
-where python >nul 2>nul
+where pythonw >nul 2>nul
 if errorlevel 1 (
-  set "PY=C:\Users\donga\AppData\Local\Programs\Python\Python311\python.exe"
+  set "PYW=C:\Users\donga\AppData\Local\Programs\Python\Python311\pythonw.exe"
 ) else (
-  set "PY=python"
+  set "PYW=pythonw"
 )
-"%PY%" watcher.py
-echo.
-pause
+start "" "%PYW%" watcher.py
+timeout /t 2 >nul

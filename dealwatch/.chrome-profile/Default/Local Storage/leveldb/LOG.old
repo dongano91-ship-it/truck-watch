@@ -1,0 +1,20 @@
+2026/11/06-12:03:43.528 2864 Reusing MANIFEST C:\Users\donga\OneDrive\Documents\deepseek-harness\default-workspace\dealwatch\.chrome-profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/11/06-12:03:43.530 2864 Recovering log #17
+2026/11/06-12:03:43.531 2864 Level-0 table #20: started
+2026/11/06-12:03:43.536 2864 Level-0 table #20: 62599 bytes OK
+2026/11/06-12:03:43.542 2864 Delete type=0 #17
+2026/11/06-12:04:36.070 1f1c Level-0 table #23: started
+2026/11/06-12:04:36.079 1f1c Level-0 table #23: 70249 bytes OK
+2026/11/06-12:04:36.081 1f1c Delete type=0 #21
+2026/11/06-12:04:43.562 1f1c Level-0 table #25: started
+2026/11/06-12:04:43.568 1f1c Level-0 table #25: 66356 bytes OK
+2026/11/06-12:04:43.571 1f1c Delete type=0 #22
+2026/11/06-12:04:43.572 1f1c Compacting 4@0 + 1@1 files
+2026/11/06-12:04:43.584 1f1c Generated table #26@0: 86 keys, 234919 bytes
+2026/11/06-12:04:43.584 1f1c Compacted 4@0 + 1@1 files => 234919 bytes
+2026/11/06-12:04:43.585 1f1c compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/11/06-12:04:43.586 1f1c Delete type=2 #16
+2026/11/06-12:04:43.586 1f1c Delete type=2 #18
+2026/11/06-12:04:43.586 1f1c Delete type=2 #20
+2026/11/06-12:04:43.587 1f1c Delete type=2 #23
+2026/11/06-12:04:43.587 1f1c Delete type=2 #25

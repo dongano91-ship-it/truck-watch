@@ -1,0 +1,8 @@
+2026/11/06-11:37:31.100 1738 Creating DB C:\Users\donga\OneDrive\Documents\deepseek-harness\default-workspace\dealwatch\.cache\probe-profile\Default\Local Storage\leveldb since it was missing.
+2026/11/06-11:37:31.124 1738 Reusing MANIFEST C:\Users\donga\OneDrive\Documents\deepseek-harness\default-workspace\dealwatch\.cache\probe-profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/11/06-11:38:05.217 454 Level-0 table #5: started
+2026/11/06-11:38:05.224 454 Level-0 table #5: 64511 bytes OK
+2026/11/06-11:38:05.227 454 Delete type=0 #3
+2026/11/06-11:38:14.545 454 Level-0 table #7: started
+2026/11/06-11:38:14.553 454 Level-0 table #7: 57539 bytes OK
+2026/11/06-11:38:14.557 454 Delete type=0 #4

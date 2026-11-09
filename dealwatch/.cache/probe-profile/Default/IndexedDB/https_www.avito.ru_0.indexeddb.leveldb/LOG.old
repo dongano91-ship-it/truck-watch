@@ -1,0 +1,7 @@
+2026/11/06-11:37:46.772 11c0 Reusing MANIFEST C:\Users\donga\OneDrive\Documents\deepseek-harness\default-workspace\dealwatch\.cache\probe-profile\Default\IndexedDB\https_www.avito.ru_0.indexeddb.leveldb/MANIFEST-000001
+2026/11/06-11:37:46.772 11c0 Recovering log #4
+2026/11/06-11:37:46.773 11c0 Reusing old log C:\Users\donga\OneDrive\Documents\deepseek-harness\default-workspace\dealwatch\.cache\probe-profile\Default\IndexedDB\https_www.avito.ru_0.indexeddb.leveldb/000004.log 
+2026/11/06-11:37:47.027 2a9c Level-0 table #8: started
+2026/11/06-11:37:47.033 2a9c Level-0 table #8: 4411 bytes OK
+2026/11/06-11:37:47.035 2a9c Delete type=0 #4
+2026/11/06-11:37:47.036 11c0 Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)

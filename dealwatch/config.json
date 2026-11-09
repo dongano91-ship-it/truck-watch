@@ -1,0 +1,140 @@
+{
+  "poll_seconds": 900,
+
+  "browser": {
+    "port": 9222,
+    "headless": false,
+    "profile_dir": ".chrome-profile"
+  },
+
+  "rules": {
+    "threshold_percent": 25,
+    "min_offers": 3,
+    "max_per_platform": 40,
+    "median_mode": "platform",
+    "max_alerts": 5,
+    "auto_match": true,
+    "match_ratio": 0.6
+  },
+
+  "notify": {
+    "telegram": {
+      "token": "9286064431:AAGOzjdgGgad4bv_SpopFbnMGn-V1Z18CkU",
+      "chat_id": "888529904",
+      "insecure_tls": false
+    },
+    "max": {
+      "token": "",
+      "chat_id": "",
+      "insecure_tls": false
+    }
+  },
+
+  "avito_mail": {
+    "enabled": false,
+    "imap_host": "imap.mail.ru",
+    "port": 993,
+    "user": "",
+    "password": "",
+    "folder": "INBOX",
+    "since_days": 3,
+    "sender_filter": "avito"
+  },
+
+  "respond_template": "Здравствуйте! Готов купить сегодня, оплата сразу. Товар ещё актуален?",
+
+  "platforms": [
+    {
+      "key": "wb",
+      "name": "Wildberries",
+      "enabled": true,
+      "url": "https://www.wildberries.ru/catalog/0/search.aspx?search={q}",
+      "mode": "anchors",
+      "selector": "a[href*=\"/detail.aspx\"]",
+      "id_re": "/catalog/(\\d+)/detail",
+      "settle": 5,
+      "scroll_steps": 3
+    },
+    {
+      "key": "ozon",
+      "name": "Ozon",
+      "enabled": true,
+      "url": "https://www.ozon.ru/search/?text={q}",
+      "warmup": "https://www.ozon.ru/",
+      "mode": "anchors",
+      "selector": "a[href*=\"/product/\"]",
+      "id_re": "/product/[^/]*?(\\d{6,})",
+      "settle": 5,
+      "scroll_steps": 3
+    },
+    {
+      "key": "ym",
+      "name": "Яндекс Маркет",
+      "enabled": false,
+      "url": "https://market.yandex.ru/search?text={q}",
+      "mode": "anchors",
+      "selector": "a[href*=\"/product--\"]",
+      "id_re": "/(\\d{6,})(?:\\?|$)",
+      "settle": 6,
+      "scroll_steps": 3,
+      "attempts": 2
+    },
+    {
+      "key": "avito",
+      "name": "Авито",
+      "enabled": true,
+      "url": "https://www.avito.ru/rossiya?q={q}",
+      "warmup": "https://www.avito.ru/",
+      "mode": "cards",
+      "selector": "[data-marker=\"item\"]",
+      "link_sel": "a[data-marker=\"item-title\"]",
+      "title_sel": "a[data-marker=\"item-title\"]",
+      "price_sel_attr": {
+        "sel": "meta[itemprop=\"price\"]",
+        "attr": "content"
+      },
+      "id_attr": "data-item-id",
+      "settle": 7,
+      "scroll_steps": 2,
+      "attempts": 3
+    },
+    {
+      "key": "mm",
+      "name": "Мегамаркет",
+      "enabled": false,
+      "url": "https://megamarket.ru/catalog/?q={q}",
+      "mode": "anchors",
+      "selector": "a[href*=\"/catalog/\"]",
+      "id_re": "-(\\d{6,})",
+      "settle": 5,
+      "scroll_steps": 3
+    }
+  ],
+
+  "watches": [
+    {
+      "id": "iphone15-128",
+      "name": "iPhone 15 128 ГБ",
+      "query": "iphone 15 128",
+      "platforms": ["wb", "ozon", "ym", "avito"],
+      "must_include": [],
+      "must_exclude": ["чехол", "плёнка", "пленка", "стекло", "кабель", "адаптер", "б/у", "бу "],
+      "min_price": 20000,
+      "max_price": 150000,
+      "threshold_percent": 20,
+      "min_offers": 5
+    },
+    {
+      "id": "dyson-v15",
+      "name": "Dyson V15",
+      "query": "dyson v15",
+      "platforms": ["wb", "ozon", "ym", "avito"],
+      "must_exclude": ["фильтр", "насадка", "щётка", "щетка", "крепление"],
+      "min_price": 20000,
+      "max_price": 120000,
+      "threshold_percent": 25,
+      "min_offers": 4,
+      "note": "пример: замените на свой товар"
+    }
+  ]
+}

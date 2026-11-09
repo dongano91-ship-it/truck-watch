@@ -1,0 +1,6 @@
+2026/11/06-11:29:30.109 3718 Creating DB C:\Users\donga\OneDrive\Documents\deepseek-harness\default-workspace\dealwatch\.cache\chrome-profile2\Default\IndexedDB\https_www.avito.ru_0.indexeddb.leveldb since it was missing.
+2026/11/06-11:29:30.117 3718 Reusing MANIFEST C:\Users\donga\OneDrive\Documents\deepseek-harness\default-workspace\dealwatch\.cache\chrome-profile2\Default\IndexedDB\https_www.avito.ru_0.indexeddb.leveldb/MANIFEST-000001
+2026/11/06-11:29:30.157 44c Level-0 table #5: started
+2026/11/06-11:29:30.162 44c Level-0 table #5: 670 bytes OK
+2026/11/06-11:29:30.165 44c Delete type=0 #3
+2026/11/06-11:29:30.165 3718 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
