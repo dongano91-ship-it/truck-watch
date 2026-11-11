@@ -1084,6 +1084,25 @@ def download_sheet(url: str) -> bytes:
     
     with urlopen(req, timeout=60, context=ctx) as resp:
         return resp.read()
+def download_sheet(url: str) -> bytes:
+    """Скачивает Google Таблицу в формате xlsx."""
+    match = re.search(r'/d/([a-zA-Z0-9-_]+)', url)
+    if not match:
+        raise ValueError(f"Не удалось извлечь ID таблицы из URL: {url}")
+    
+    sheet_id = match.group(1)
+    export_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=xlsx"
+    
+    req = urllib.request.Request(export_url, headers={
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+    })
+    
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+    
+    with urllib.request.urlopen(req, timeout=60, context=ctx) as resp:
+        return resp.read()
 
 def fetch(cfg: dict, local_file: str | None) -> bytes:
     if local_file:
