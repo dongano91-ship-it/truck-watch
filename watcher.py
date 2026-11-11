@@ -309,32 +309,32 @@ def classify_hex(hex_color: str | None, cfg: dict) -> str | None:
 # ================================================================ загрузка
 
 
-def download_sheet(url: str) -> bytes:
-    """Скачивает таблицу как xlsx — единственный формат, где сохраняются цвета."""
-    sheet_id, gid = parse_sheet_url(url)
-    export = (
-        f"https://docs.google.com/spreadsheets/d/{sheet_id}/export"
-        f"?format=xlsx&gid={gid}"
-    )
-    req = urllib.request.Request(export, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=45) as resp:
-        data = resp.read()
-    if data[:2] != b"PK":
-        raise RuntimeError(
-            "Пришёл не xlsx (похоже на страницу входа Google). "
-            "Откройте таблицу: Настройки доступа → «Все, у кого есть ссылка» → Просмотр."
-        )
-    CACHE_DIR.mkdir(exist_ok=True)
-    (CACHE_DIR / "sheet.xlsx").write_bytes(data)
+
     return data
 
 
 def pick_grid(grids: list[Grid]) -> tuple[Grid, int]:
-    """Выбирает лист и строку заголовков (там, где есть «ГОРОД»)."""
+    """Выбирает лист с сегодняшней датой и строку заголовков (там, где есть «ГОРОД»)."""
+    import datetime
+    
+    # Получаем сегодняшнюю дату. Формат "%d.%m" означает, что лист должен называться как "11.11"
+    # Если у тебя листы называются "11.11.2026", поменяй на strftime("%d.%m.%Y")
+    today_str = datetime.datetime.now().strftime("%d.%m")
+    
+    # 1. Сначала пытаемся найти лист, в названии которого есть сегодняшняя дата
+    for grid in grids:
+        if today_str in grid.name:
+            header = find_header(grid)
+            if header:
+                return grid, header
+                
+    # 2. Если лист с датой не найден (или в нем нет «ГОРОД»), 
+    # то идем по всем листам, как было раньше (чтобы бот не упал)
     for grid in grids:
         header = find_header(grid)
         if header:
             return grid, header
+            
     raise RuntimeError("Ни на одном листе не нашёл заголовок «ГОРОД».")
 
 
