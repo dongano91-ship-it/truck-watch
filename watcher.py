@@ -323,7 +323,7 @@ def pick_grid(grids: list[Grid]) -> tuple[Grid, int]:
     
     # 1. Сначала пытаемся найти лист, в названии которого есть сегодняшняя дата
     for grid in grids:
-        if today_str in grid.name:
+       if today_str in getattr(grid, 'sheet_title', ''):
             header = find_header(grid)
             if header:
                 return grid, header
