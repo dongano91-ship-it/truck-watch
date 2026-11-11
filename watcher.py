@@ -1073,7 +1073,7 @@ def download_sheet(url: str) -> bytes:
     sheet_id = match.group(1)
     export_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=xlsx"
     
-    req = Request(export_url, headers={
+    req = urllib.request.Request(export_url, headers={
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
     })
     
