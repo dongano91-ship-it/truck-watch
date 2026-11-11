@@ -149,7 +149,8 @@ def _col_index(ref: str) -> int:
 class Grid:
     """Минимальное представление листа: значения и заливки по (строка, колонка)."""
 
-    def __init__(self):
+    def __init__(self, sheet_title: str = ""):  # ← Добавляем параметр
+        self.sheet_title = sheet_title  # ← Сохраняем название листа
         self.cells: dict[tuple[int, int], tuple[str, str | None]] = {}
         self.max_row = 0
         self.max_col = 0
@@ -213,8 +214,9 @@ def _read_styles(zf: zipfile.ZipFile) -> list[str | None]:
     return xf_fill
 
 
-def _parse_sheet(xml_bytes: bytes, shared: list[str], styles: list[str | None]) -> Grid:
-    grid = Grid()
+def _parse_sheet(xml_bytes: bytes, shared: list[str], styles: list[str | None], sheet_title: str = "") -> Grid:
+    grid = Grid(sheet_title=sheet_title)  # ← Передаём название листа
+    # Остальной код остаётся без изменений
     root = ET.fromstring(xml_bytes)
     for row_node in root.iter():
         if _local(row_node.tag) != "row":
@@ -275,7 +277,22 @@ def xlsx_to_grids(data: bytes) -> list[Grid]:
 
     names = [n for n in zf.namelist() if re.match(r"xl/worksheets/sheet\d+\.xml$", n)]
     names.sort(key=lambda n: int(re.search(r"sheet(\d+)\.xml", n).group(1)))
-    return [_parse_sheet(zf.read(n), shared, styles) for n in names]
+
+    # --- НОВЫЙ КОД: Извлекаем названия листов ---
+    workbook_xml = zf.read("xl/workbook.xml")
+    root = ET.fromstring(workbook_xml)
+    ns = {"main": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
+    sheet_names = []
+    for s in root.findall(".//main:sheet", ns):
+        sheet_names.append(s.get("name", f"Sheet{s.get('sheetId', '?')}"))
+
+    result = []
+    for i, n in enumerate(names):
+        title = sheet_names[i] if i < len(sheet_names) else f"Sheet{i+1}"
+        result.append(_parse_sheet(zf.read(n), shared, styles, title))
+    # --- КОНЕЦ НОВОГО КОДА ---
+
+    return result
 
 
 # ================================================================ цвета
@@ -316,25 +333,23 @@ def classify_hex(hex_color: str | None, cfg: dict) -> str | None:
 def pick_grid(grids: list[Grid]) -> tuple[Grid, int]:
     """Выбирает лист с сегодняшней датой и строку заголовков (там, где есть «ГОРОД»)."""
     import datetime
-    
-    # Получаем сегодняшнюю дату. Формат "%d.%m" означает, что лист должен называться как "11.11"
-    # Если у тебя листы называются "11.11.2026", поменяй на strftime("%d.%m.%Y")
-    today_str = datetime.datetime.now().strftime("%d.%m")
-    
-    # 1. Сначала пытаемся найти лист, в названии которого есть сегодняшняя дата
+
+    today_str = datetime.datetime.now().strftime("%d.%m")  # Формат "11.11"
+
+    # 1. Ищем лист с сегодняшней датой в названии
     for grid in grids:
-       if today_str in getattr(grid, 'sheet_title', ''):
+        if hasattr(grid, 'sheet_title') and today_str in grid.sheet_title:
             header = find_header(grid)
             if header:
                 return grid, header
-                
-    # 2. Если лист с датой не найден (или в нем нет «ГОРОД»), 
-    # то идем по всем листам, как было раньше (чтобы бот не упал)
-    for grid in grids:
+
+    # 2. Если не нашли — берём ПОСЛЕДНИЙ лист
+    for grid in reversed(grids):
         header = find_header(grid)
         if header:
+            log.info(f"Переключился на лист: {getattr(grid, 'sheet_title', 'unknown')}")
             return grid, header
-            
+
     raise RuntimeError("Ни на одном листе не нашёл заголовок «ГОРОД».")
 
 
