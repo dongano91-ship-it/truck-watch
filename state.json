@@ -80,19 +80,19 @@
   "problem": false
  },
  "00053361": {
-  "status": "arrived",
-  "problem": true
+  "status": "departed",
+  "problem": false
  },
  "00053398": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00053502": {
-  "status": "arrived",
-  "problem": true
+  "status": "departed",
+  "problem": false
  },
  "00053397": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00053404": {
@@ -100,115 +100,255 @@
   "problem": false
  },
  "00053424": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00053394": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00053409": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00053528": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
- "00053362": {
-  "status": "arrived",
-  "problem": true
- },
  "00053396": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00053505": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00053614": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00053249": {
-  "status": "arrived",
+  "status": "departed",
   "problem": true
  },
  "00053387": {
-  "status": "arrived",
-  "problem": false
- },
- "00053478": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00053529": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
- "00053365": {
-  "status": "arrived",
+ "00053386": {
+  "status": "departed",
+  "problem": false
+ },
+ "00053362": {
+  "status": "departed",
+  "problem": false
+ },
+ "00053478": {
+  "status": "departed",
   "problem": false
  },
  "00052788": {
-  "status": "arrived",
+  "status": "departed",
+  "problem": false
+ },
+ "00053354": {
+  "status": "departed",
+  "problem": false
+ },
+ "00053390": {
+  "status": "departed",
+  "problem": false
+ },
+ "00053405": {
+  "status": "departed",
+  "problem": false
+ },
+ "00053400": {
+  "status": "departed",
   "problem": false
  },
  "00053491": {
   "status": "loading",
   "problem": false
  },
- "00053386": {
-  "status": "planned",
-  "problem": false
- },
- "00053354": {
-  "status": "planned",
-  "problem": false
- },
- "00053390": {
-  "status": "planned",
-  "problem": false
- },
- "00053405": {
-  "status": "planned",
-  "problem": false
- },
- "00053400": {
-  "status": "planned",
-  "problem": false
- },
- "00053539": {
-  "status": "planned",
-  "problem": false
- },
  "00053399": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00053402": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00053408": {
   "status": "departed",
   "problem": false
  },
+ "00053539": {
+  "status": "loading",
+  "problem": false
+ },
  "00053407": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00053510": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00053511": {
-  "status": "planned",
+  "status": "loading",
+  "problem": false
+ },
+ "00053569": {
+  "status": "arrived",
   "problem": false
  },
  "00053513": {
+  "status": "loading",
+  "problem": false
+ },
+ "00053559": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00053556": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00053560": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00053613": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00053651": {
   "status": "planned",
   "problem": false
+ },
+ "00053661": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053667": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053580": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053589": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053677": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053536": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053649": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053657": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053598": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053645": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053656": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053719": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053721": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053593": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053462": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053646": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053735": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053655": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053730": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053504": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053724": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053732": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053734": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053700": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053600": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053737": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053698": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053696": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053703": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053365": {
+  "status": "loading",
+  "problem": true
  }
 }
