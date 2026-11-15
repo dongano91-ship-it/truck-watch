@@ -128,8 +128,8 @@
   "problem": false
  },
  "00054215": {
-  "status": "loading",
-  "problem": true
+  "status": "departed",
+  "problem": false
  },
  "00054305": {
   "status": "departed",
@@ -144,75 +144,75 @@
   "problem": false
  },
  "00054313": {
-  "status": "loading",
-  "problem": true
+  "status": "departed",
+  "problem": false
  },
  "00054309": {
-  "status": "loading",
-  "problem": true
+  "status": "departed",
+  "problem": false
  },
  "00054314": {
-  "status": "loading",
-  "problem": true
+  "status": "departed",
+  "problem": false
  },
  "00054316": {
-  "status": "arrived",
-  "problem": true
+  "status": "departed",
+  "problem": false
  },
  "00054317": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00054318": {
-  "status": "arrived",
-  "problem": true
+  "status": "departed",
+  "problem": false
  },
  "00054320": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00054322": {
-  "status": "arrived",
-  "problem": true
+  "status": "departed",
+  "problem": false
  },
  "00054323": {
-  "status": "arrived",
-  "problem": true
+  "status": "departed",
+  "problem": false
  },
  "00054341": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00054342": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00054345": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00054351": {
-  "status": "planned",
-  "problem": true
+  "status": "loading",
+  "problem": false
  },
  "00054355": {
-  "status": "planned",
+  "status": "loading",
   "problem": true
  },
  "00054358": {
-  "status": "planned",
+  "status": "arrived",
   "problem": true
  },
  "00054266": {
-  "status": "planned",
+  "status": "loading",
   "problem": true
  },
  "00054349": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00054359": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00054361": {
