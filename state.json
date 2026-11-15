@@ -64,7 +64,7 @@
   "problem": false
  },
  "00054165": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00054168": {
@@ -80,11 +80,11 @@
   "problem": false
  },
  "00054150": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00054177": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00054157": {
@@ -92,11 +92,11 @@
   "problem": false
  },
  "00054156": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00054160": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00054231": {
@@ -104,86 +104,262 @@
   "problem": false
  },
  "00054153": {
-  "status": "arrived",
-  "problem": true
+  "status": "departed",
+  "problem": false
  },
  "00054181": {
+  "status": "departed",
+  "problem": false
+ },
+ "00054159": {
+  "status": "departed",
+  "problem": false
+ },
+ "00054164": {
+  "status": "departed",
+  "problem": false
+ },
+ "00054251": {
+  "status": "departed",
+  "problem": false
+ },
+ "00054284": {
+  "status": "departed",
+  "problem": false
+ },
+ "00054215": {
   "status": "loading",
   "problem": true
  },
- "00054159": {
+ "00054305": {
+  "status": "departed",
+  "problem": false
+ },
+ "00054307": {
+  "status": "departed",
+  "problem": false
+ },
+ "00054311": {
+  "status": "departed",
+  "problem": false
+ },
+ "00054313": {
+  "status": "loading",
+  "problem": true
+ },
+ "00054309": {
+  "status": "loading",
+  "problem": true
+ },
+ "00054314": {
+  "status": "loading",
+  "problem": true
+ },
+ "00054316": {
   "status": "arrived",
   "problem": true
  },
- "00054164": {
+ "00054317": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00054318": {
   "status": "arrived",
   "problem": true
  },
- "00054251": {
+ "00054320": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00054322": {
   "status": "arrived",
   "problem": true
  },
- "00054284": {
+ "00054323": {
   "status": "arrived",
+  "problem": true
+ },
+ "00054341": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054342": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054345": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054351": {
+  "status": "planned",
+  "problem": true
+ },
+ "00054355": {
+  "status": "planned",
+  "problem": true
+ },
+ "00054358": {
+  "status": "planned",
+  "problem": true
+ },
+ "00054266": {
+  "status": "planned",
+  "problem": true
+ },
+ "00054349": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054359": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054361": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054364": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054362": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054399": {
+  "status": "planned",
+  "problem": true
+ },
+ "00054401": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054402": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054367": {
+  "status": "planned",
+  "problem": true
+ },
+ "00054400": {
+  "status": "planned",
+  "problem": true
+ },
+ "00054403": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054404": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054405": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054406": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054338": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054348": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054360": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054357": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054375": {
+  "status": "planned",
+  "problem": true
+ },
+ "00054398": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054363": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054391": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054354": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054365": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054325": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054340": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054370": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054344": {
+  "status": "planned",
+  "problem": false
+ },
+ "00054356": {
+  "status": "planned",
   "problem": false
  },
  "00053654": {
   "status": "planned",
   "problem": true
  },
- "00054215": {
-  "status": "planned",
-  "problem": true
- },
- "00054305": {
+ "00054352": {
   "status": "planned",
   "problem": false
  },
- "00054307": {
-  "status": "loading",
-  "problem": false
- },
- "00054311": {
+ "00054343": {
   "status": "planned",
   "problem": false
  },
- "00054313": {
+ "Москва день в день|92": {
   "status": "planned",
   "problem": false
  },
- "00054309": {
+ "00054368": {
   "status": "planned",
   "problem": false
  },
- "00054314": {
+ "00054347": {
   "status": "planned",
   "problem": false
  },
- "00054316": {
+ "Воронеж|95": {
   "status": "planned",
   "problem": false
  },
- "00054317": {
+ "00054350": {
   "status": "planned",
   "problem": false
  },
- "00054318": {
+ "00054384": {
   "status": "planned",
   "problem": false
  },
- "00054320": {
-  "status": "planned",
-  "problem": false
- },
- "00054322": {
-  "status": "planned",
-  "problem": false
- },
- "00054323": {
-  "status": "planned",
-  "problem": false
- },
- "00054266": {
+ "Питер|98": {
   "status": "planned",
   "problem": false
  }
