@@ -1,354 +1,114 @@
 {
- "00054538": {
-  "status": "departed",
-  "problem": false
- },
- "00054624": {
-  "status": "departed",
-  "problem": false
- },
- "00054608": {
-  "status": "departed",
-  "problem": false
- },
- "00054627": {
-  "status": "departed",
-  "problem": false
- },
- "00054609": {
-  "status": "departed",
-  "problem": false
- },
- "00054619": {
-  "status": "departed",
-  "problem": false
- },
- "00054620": {
-  "status": "departed",
-  "problem": false
- },
- "00054621": {
-  "status": "departed",
-  "problem": false
- },
- "00054622": {
-  "status": "departed",
-  "problem": false
- },
- "00054610": {
-  "status": "departed",
-  "problem": false
- },
- "00054625": {
-  "status": "departed",
-  "problem": false
- },
- "00054516": {
-  "status": "departed",
-  "problem": false
- },
- "00054515": {
-  "status": "departed",
-  "problem": false
- },
- "00054601": {
-  "status": "departed",
-  "problem": false
- },
- "00054604": {
-  "status": "departed",
-  "problem": false
- },
- "00054517": {
-  "status": "departed",
-  "problem": false
- },
- "00054580": {
-  "status": "departed",
-  "problem": false
- },
- "00054581": {
-  "status": "departed",
-  "problem": false
- },
- "00054599": {
-  "status": "departed",
-  "problem": false
- },
- "00054606": {
-  "status": "departed",
-  "problem": false
- },
- "00054613": {
-  "status": "departed",
-  "problem": false
- },
- "00054525": {
-  "status": "departed",
-  "problem": false
- },
- "00054597": {
-  "status": "departed",
-  "problem": false
- },
- "00054614": {
-  "status": "departed",
-  "problem": false
- },
- "00054593": {
-  "status": "departed",
-  "problem": false
- },
- "00054612": {
-  "status": "departed",
-  "problem": false
- },
- "00054618": {
-  "status": "departed",
-  "problem": false
- },
- "00054694": {
-  "status": "departed",
-  "problem": false
- },
- "00054616": {
-  "status": "departed",
-  "problem": false
- },
- "00054660": {
-  "status": "departed",
-  "problem": false
- },
- "00054760": {
-  "status": "departed",
-  "problem": false
- },
- "00054582": {
-  "status": "departed",
-  "problem": false
- },
- "00054646": {
-  "status": "departed",
-  "problem": false
- },
- "00054615": {
-  "status": "departed",
-  "problem": false
- },
  "00053841": {
   "status": "loading",
   "problem": true
  },
- "00054583": {
-  "status": "departed",
-  "problem": false
- },
- "00054688": {
-  "status": "departed",
-  "problem": false
- },
- "00054769": {
-  "status": "departed",
-  "problem": false
- },
- "00054770": {
-  "status": "departed",
-  "problem": false
- },
- "00054791": {
-  "status": "departed",
-  "problem": false
- },
- "00054773": {
-  "status": "departed",
-  "problem": false
- },
- "00054779": {
-  "status": "departed",
-  "problem": false
- },
- "00054765": {
-  "status": "departed",
-  "problem": false
- },
- "00054783": {
-  "status": "departed",
-  "problem": false
- },
- "00054786": {
-  "status": "departed",
-  "problem": false
- },
- "00054800": {
-  "status": "departed",
-  "problem": false
- },
- "00054805": {
-  "status": "departed",
-  "problem": false
- },
- "00054807": {
-  "status": "departed",
-  "problem": false
- },
- "00054796": {
-  "status": "departed",
-  "problem": false
- },
- "00054798": {
-  "status": "departed",
-  "problem": true
- },
- "00054799": {
-  "status": "departed",
-  "problem": true
- },
- "00054808": {
-  "status": "departed",
-  "problem": true
- },
- "00054811": {
-  "status": "departed",
-  "problem": true
- },
- "00054812": {
-  "status": "departed",
-  "problem": true
- },
- "00054814": {
-  "status": "departed",
-  "problem": true
- },
- "00054815": {
-  "status": "departed",
-  "problem": true
- },
- "00054841": {
-  "status": "departed",
-  "problem": true
- },
- "00054843": {
-  "status": "departed",
-  "problem": true
- },
- "00054846": {
-  "status": "departed",
-  "problem": true
- },
- "00054847": {
-  "status": "departed",
-  "problem": true
- },
- "00054849": {
-  "status": "departed",
-  "problem": true
- },
- "00054831": {
-  "status": "loading",
-  "problem": false
- },
- "00054809": {
-  "status": "departed",
-  "problem": false
- },
  "00054817": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00054826": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00054833": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00054844": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00054853": {
-  "status": "loading",
-  "problem": true
+  "status": "departed",
+  "problem": false
  },
  "00054854": {
-  "status": "arrived",
-  "problem": true
+  "status": "departed",
+  "problem": false
  },
  "00054742": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00054743": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00054819": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00054829": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00054835": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00054842": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00054845": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00054824": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00054825": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00054848": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00054834": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00054839": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00054850": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00054838": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
- "Москва день в день|91": {
-  "status": "planned",
+ "00054918": {
+  "status": "arrived",
   "problem": false
  },
  "00054837": {
-  "status": "planned",
+  "status": "loading",
+  "problem": false
+ },
+ "00054915": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00054939": {
+  "status": "arrived",
   "problem": false
  },
  "00054852": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
- "Москва день в день|94": {
-  "status": "planned",
+ "00054899": {
+  "status": "arrived",
   "problem": false
  },
- "Питер|95": {
-  "status": "planned",
+ "00054861": {
+  "status": "arrived",
   "problem": false
  }
 }
