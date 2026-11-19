@@ -140,95 +140,95 @@
   "problem": false
  },
  "00055006": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055007": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055026": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055010": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055018": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055019": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055020": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055022": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055023": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00055025": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00055028": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00055031": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00055032": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00055034": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00055037": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00055071": {
-  "status": "planned",
-  "problem": false
+  "status": "loading",
+  "problem": true
  },
  "00055075": {
-  "status": "planned",
-  "problem": false
+  "status": "loading",
+  "problem": true
  },
  "00055076": {
-  "status": "planned",
-  "problem": false
+  "status": "loading",
+  "problem": true
  },
  "00055077": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00055058": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00055057": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00055048": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00055056": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00053841": {
@@ -307,6 +307,10 @@
   "status": "planned",
   "problem": false
  },
+ "Москва день в день|84": {
+  "status": "planned",
+  "problem": false
+ },
  "00055051": {
   "status": "planned",
   "problem": false
@@ -315,7 +319,11 @@
   "status": "planned",
   "problem": false
  },
- "00054977": {
+ "Воронеж|87": {
+  "status": "planned",
+  "problem": false
+ },
+ "Москва день в день|88": {
   "status": "planned",
   "problem": false
  },
