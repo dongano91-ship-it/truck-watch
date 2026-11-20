@@ -1,8 +1,4 @@
 {
- "00053841": {
-  "status": "loading",
-  "problem": true
- },
  "00055351": {
   "status": "departed",
   "problem": false
@@ -28,8 +24,8 @@
   "problem": false
  },
  "00055223": {
-  "status": "arrived",
-  "problem": false
+  "status": "departed",
+  "problem": true
  },
  "00055231": {
   "status": "departed",
@@ -44,11 +40,11 @@
   "problem": false
  },
  "00055216": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00055285": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00055301": {
@@ -56,54 +52,194 @@
   "problem": false
  },
  "00055287": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055289": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055296": {
-  "status": "planned",
-  "problem": false
+  "status": "departed",
+  "problem": true
  },
  "00055307": {
-  "status": "planned",
-  "problem": false
- },
- "00055389": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00055288": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00055230": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00055298": {
-  "status": "planned",
+  "status": "departed",
+  "problem": false
+ },
+ "00055411": {
+  "status": "departed",
   "problem": false
  },
  "00055305": {
-  "status": "planned",
-  "problem": false
+  "status": "departed",
+  "problem": true
  },
  "00055308": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
+ },
+ "00055413": {
+  "status": "departed",
+  "problem": true
  },
  "00055330": {
-  "status": "planned",
-  "problem": false
- },
- "00055370": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00055304": {
+  "status": "departed",
+  "problem": false
+ },
+ "00055370": {
+  "status": "loading",
+  "problem": true
+ },
+ "00055376": {
+  "status": "loading",
+  "problem": false
+ },
+ "00055464": {
+  "status": "loading",
+  "problem": false
+ },
+ "00055465": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00055463": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00055469": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00055477": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00055448": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055470": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055471": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055476": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055474": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055441": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055485": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055438": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055499": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055487": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055437": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055484": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055500": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055440": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053841": {
+  "status": "loading",
+  "problem": true
+ },
+ "00055389": {
+  "status": "planned",
+  "problem": true
+ },
+ "00055442": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055486": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055488": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055496": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055497": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055490": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055495": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055372": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055491": {
+  "status": "planned",
+  "problem": false
+ },
+ "Москва день в день|66": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055492": {
+  "status": "planned",
+  "problem": false
+ },
+ "Воронеж|68": {
   "status": "planned",
   "problem": false
  }
