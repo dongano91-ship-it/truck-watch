@@ -104,87 +104,87 @@
   "problem": false
  },
  "00055370": {
-  "status": "loading",
+  "status": "departed",
   "problem": true
  },
  "00055376": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00055464": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00055465": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055463": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055469": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055477": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055448": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00055470": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00055471": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00055476": {
-  "status": "planned",
-  "problem": false
+  "status": "departed",
+  "problem": true
  },
  "00055474": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00055441": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00055485": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00055438": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00055499": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00055487": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00055437": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00055484": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00055500": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00055440": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00053841": {
@@ -216,7 +216,7 @@
   "problem": false
  },
  "00055490": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00055495": {
