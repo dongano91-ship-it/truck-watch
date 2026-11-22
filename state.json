@@ -95,12 +95,12 @@
   "status": "departed",
   "problem": false
  },
- "00055671": {
-  "status": "loading",
+ "00055645": {
+  "status": "departed",
   "problem": false
  },
- "00055645": {
-  "status": "arrived",
+ "00055671": {
+  "status": "departed",
   "problem": false
  },
  "00053841": {
@@ -112,70 +112,162 @@
   "problem": true
  },
  "00055674": {
-  "status": "planned",
-  "problem": false
+  "status": "loading",
+  "problem": true
  },
  "00055759": {
-  "status": "planned",
-  "problem": false
+  "status": "departed",
+  "problem": true
  },
  "00055763": {
-  "status": "loading",
-  "problem": false
+  "status": "departed",
+  "problem": true
  },
  "00055762": {
-  "status": "planned",
-  "problem": false
+  "status": "departed",
+  "problem": true
  },
  "00055767": {
-  "status": "planned",
-  "problem": false
+  "status": "departed",
+  "problem": true
  },
  "00055768": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00055769": {
-  "status": "planned",
-  "problem": false
- },
- "00055770": {
   "status": "loading",
   "problem": false
  },
+ "00055770": {
+  "status": "departed",
+  "problem": false
+ },
+ "00055805": {
+  "status": "departed",
+  "problem": false
+ },
  "00055772": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00055773": {
-  "status": "planned",
-  "problem": false
+  "status": "arrived",
+  "problem": true
  },
  "00055774": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00055776": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00055778": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00055779": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00055781": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00055784": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00055788": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00055789": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00055791": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00055817": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00055819": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00055820": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00055793": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00055811": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055794": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00055795": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055796": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055825": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055830": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055798": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055821": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055804": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055816": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055806": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055810": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055807": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055813": {
+  "status": "planned",
+  "problem": false
+ },
+ "00055808": {
+  "status": "planned",
+  "problem": false
+ },
+ "Воронеж|74": {
   "status": "planned",
   "problem": false
  }
