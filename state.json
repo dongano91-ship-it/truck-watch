@@ -112,7 +112,7 @@
   "problem": true
  },
  "00055674": {
-  "status": "loading",
+  "status": "departed",
   "problem": true
  },
  "00055759": {
@@ -136,7 +136,7 @@
   "problem": false
  },
  "00055769": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00055770": {
@@ -148,80 +148,80 @@
   "problem": false
  },
  "00055772": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00055773": {
-  "status": "arrived",
-  "problem": true
+  "status": "departed",
+  "problem": false
  },
  "00055774": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00055776": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055778": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00055779": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00055781": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055784": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055788": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055789": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055791": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055817": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00055819": {
-  "status": "arrived",
+  "status": "loading",
   "problem": false
  },
  "00055820": {
   "status": "arrived",
-  "problem": false
+  "problem": true
  },
  "00055793": {
   "status": "arrived",
   "problem": false
  },
  "00055811": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00055794": {
   "status": "arrived",
-  "problem": false
+  "problem": true
  },
  "00055795": {
-  "status": "planned",
-  "problem": false
+  "status": "arrived",
+  "problem": true
  },
  "00055796": {
   "status": "planned",
-  "problem": false
+  "problem": true
  },
  "00055825": {
   "status": "planned",
