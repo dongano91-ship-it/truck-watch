@@ -1,184 +1,4 @@
 {
- "00055796": {
-  "status": "departed",
-  "problem": false
- },
- "00055825": {
-  "status": "departed",
-  "problem": false
- },
- "00055830": {
-  "status": "departed",
-  "problem": false
- },
- "00055798": {
-  "status": "departed",
-  "problem": false
- },
- "00055821": {
-  "status": "departed",
-  "problem": false
- },
- "00055804": {
-  "status": "departed",
-  "problem": false
- },
- "00055816": {
-  "status": "departed",
-  "problem": false
- },
- "00055880": {
-  "status": "departed",
-  "problem": false
- },
- "00055806": {
-  "status": "departed",
-  "problem": false
- },
- "00055810": {
-  "status": "departed",
-  "problem": false
- },
- "00055807": {
-  "status": "departed",
-  "problem": false
- },
- "00055900": {
-  "status": "departed",
-  "problem": false
- },
- "00055813": {
-  "status": "departed",
-  "problem": false
- },
- "00055808": {
-  "status": "departed",
-  "problem": false
- },
- "00055859": {
-  "status": "departed",
-  "problem": false
- },
- "00055842": {
-  "status": "departed",
-  "problem": false
- },
- "00055885": {
-  "status": "departed",
-  "problem": false
- },
- "00055858": {
-  "status": "departed",
-  "problem": true
- },
- "00055962": {
-  "status": "departed",
-  "problem": false
- },
- "00055963": {
-  "status": "departed",
-  "problem": true
- },
- "00055964": {
-  "status": "departed",
-  "problem": false
- },
- "00055982": {
-  "status": "departed",
-  "problem": false
- },
- "00055970": {
-  "status": "departed",
-  "problem": true
- },
- "00055983": {
-  "status": "departed",
-  "problem": false
- },
- "00055974": {
-  "status": "departed",
-  "problem": false
- },
- "00055936": {
-  "status": "loading",
-  "problem": false
- },
- "00055985": {
-  "status": "loading",
-  "problem": false
- },
- "00055986": {
-  "status": "arrived",
-  "problem": false
- },
- "00055988": {
-  "status": "loading",
-  "problem": false
- },
- "00055992": {
-  "status": "arrived",
-  "problem": false
- },
- "00055993": {
-  "status": "arrived",
-  "problem": false
- },
- "00055935": {
-  "status": "arrived",
-  "problem": false
- },
- "00055995": {
-  "status": "arrived",
-  "problem": false
- },
- "00056028": {
-  "status": "arrived",
-  "problem": false
- },
- "00055996": {
-  "status": "arrived",
-  "problem": false
- },
- "00055998": {
-  "status": "arrived",
-  "problem": false
- },
- "00056029": {
-  "status": "arrived",
-  "problem": false
- },
- "00055997": {
-  "status": "planned",
-  "problem": false
- },
- "00056003": {
-  "status": "planned",
-  "problem": false
- },
- "00056027": {
-  "status": "planned",
-  "problem": false
- },
- "00056021": {
-  "status": "planned",
-  "problem": false
- },
- "00056001": {
-  "status": "planned",
-  "problem": false
- },
- "00056002": {
-  "status": "planned",
-  "problem": false
- },
- "00055934": {
-  "status": "planned",
-  "problem": false
- },
- "00056030": {
-  "status": "planned",
-  "problem": false
- },
  "00053841": {
   "status": "loading",
   "problem": true
@@ -187,12 +7,16 @@
   "status": "planned",
   "problem": false
  },
+ "00055993": {
+  "status": "loading",
+  "problem": true
+ },
  "00055952": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00055939": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00056024": {
@@ -200,43 +24,43 @@
   "problem": false
  },
  "00055953": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00056023": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00056009": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00056025": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00056000": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00056011": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00056017": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00056005": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00056006": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00056012": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00056007": {
@@ -255,7 +79,7 @@
   "status": "planned",
   "problem": false
  },
- "Москва день в день|72": {
+ "Москва день в день|25": {
   "status": "planned",
   "problem": false
  },
@@ -271,11 +95,11 @@
   "status": "planned",
   "problem": false
  },
- "Питер|76": {
+ "Питер|29": {
   "status": "planned",
   "problem": false
  },
- "Батайск|78": {
+ "Батайск|31": {
   "status": "planned",
   "problem": false
  }
