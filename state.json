@@ -152,107 +152,107 @@
   "problem": false
  },
  "00056391": {
-  "status": "loading",
+  "status": "departed",
   "problem": true
  },
- "00056398": {
-  "status": "loading",
-  "problem": false
- },
  "00056403": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056404": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056407": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056409": {
-  "status": "arrived",
-  "problem": false
+  "status": "departed",
+  "problem": true
  },
  "00056411": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056410": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056412": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00056414": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00056413": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00056415": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00056416": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00056417": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00056420": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00056424": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00056427": {
-  "status": "planned",
-  "problem": false
+  "status": "arrived",
+  "problem": true
  },
  "00056461": {
-  "status": "planned",
-  "problem": false
+  "status": "loading",
+  "problem": true
  },
  "00056467": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00056463": {
-  "status": "planned",
-  "problem": false
- },
- "00056438": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00056465": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00056421": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00056423": {
-  "status": "planned",
+  "status": "loading",
   "problem": false
  },
  "00053841": {
   "status": "loading",
   "problem": true
  },
+ "00056398": {
+  "status": "departed",
+  "problem": false
+ },
+ "00056438": {
+  "status": "arrived",
+  "problem": true
+ },
  "00056466": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00056468": {
