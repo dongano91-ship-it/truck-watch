@@ -1,8 +1,4 @@
 {
- "00053841": {
-  "status": "loading",
-  "problem": true
- },
  "00056398": {
   "status": "departed",
   "problem": false
@@ -56,11 +52,11 @@
   "problem": false
  },
  "00056453": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00056471": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00056459": {
@@ -68,46 +64,238 @@
   "problem": false
  },
  "00056454": {
-  "status": "arrived",
-  "problem": true
+  "status": "departed",
+  "problem": false
  },
  "00056508": {
   "status": "departed",
   "problem": false
  },
  "00056447": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056450": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00056445": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056537": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056449": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056480": {
-  "status": "arrived",
-  "problem": false
- },
- "00056460": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056444": {
-  "status": "arrived",
+  "status": "departed",
+  "problem": false
+ },
+ "00056460": {
+  "status": "departed",
   "problem": false
  },
  "00056482": {
+  "status": "loading",
+  "problem": false
+ },
+ "00056601": {
+  "status": "departed",
+  "problem": false
+ },
+ "по мягкой накладной 37 грш|34": {
+  "status": "departed",
+  "problem": false
+ },
+ "00056604": {
+  "status": "loading",
+  "problem": true
+ },
+ "00056605": {
+  "status": "departed",
+  "problem": false
+ },
+ "00056607": {
+  "status": "departed",
+  "problem": false
+ },
+ "00056609": {
+  "status": "departed",
+  "problem": false
+ },
+ "00056608": {
+  "status": "departed",
+  "problem": false
+ },
+ "00056610": {
+  "status": "loading",
+  "problem": false
+ },
+ "00056611": {
+  "status": "loading",
+  "problem": false
+ },
+ "00056612": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00056613": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00056624": {
+  "status": "loading",
+  "problem": false
+ },
+ "00056614": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00056616": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00056620": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00056618": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056619": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056626": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056628": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056629": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056646": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056649": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056650": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056622": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056653": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056654": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056623": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056634": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056631": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056659": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056656": {
+  "status": "planned",
+  "problem": false
+ },
+ "00053841": {
+  "status": "loading",
+  "problem": true
+ },
+ "00056648": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056655": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056664": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056657": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056666": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056658": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056636": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056643": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056641": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056644": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056651": {
+  "status": "planned",
+  "problem": false
+ },
+ "Москва день в день|78": {
+  "status": "planned",
+  "problem": false
+ },
+ "Воронеж|79": {
+  "status": "planned",
+  "problem": false
+ },
+ "Москва день в день|80": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056638": {
+  "status": "planned",
+  "problem": false
+ },
+ "Питер|83": {
   "status": "planned",
   "problem": false
  }
