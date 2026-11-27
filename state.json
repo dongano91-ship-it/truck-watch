@@ -1,8 +1,4 @@
 {
- "00053841": {
-  "status": "loading",
-  "problem": true
- },
  "00056648": {
   "status": "departed",
   "problem": true
@@ -28,7 +24,7 @@
   "problem": false
  },
  "00056636": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00056643": {
@@ -44,11 +40,11 @@
   "problem": false
  },
  "00056641": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00056644": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056651": {
@@ -56,18 +52,138 @@
   "problem": false
  },
  "00056735": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056693": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00056638": {
-  "status": "planned",
+  "status": "departed",
   "problem": false
  },
  "00056674": {
+  "status": "departed",
+  "problem": false
+ },
+ "00056819": {
+  "status": "departed",
+  "problem": false
+ },
+ "00056820": {
+  "status": "departed",
+  "problem": false
+ },
+ "00056834": {
+  "status": "departed",
+  "problem": false
+ },
+ "00056822": {
+  "status": "departed",
+  "problem": false
+ },
+ "00056823": {
+  "status": "departed",
+  "problem": false
+ },
+ "00056824": {
+  "status": "departed",
+  "problem": false
+ },
+ "00056825": {
+  "status": "departed",
+  "problem": false
+ },
+ "00056737": {
+  "status": "loading",
+  "problem": false
+ },
+ "00056839": {
+  "status": "loading",
+  "problem": false
+ },
+ "00056835": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00056836": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00056845": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00056846": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00056849": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00056862": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00056864": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00056865": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00056738": {
+  "status": "arrived",
+  "problem": false
+ },
+ "00053841": {
+  "status": "loading",
+  "problem": true
+ },
+ "00056850": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056856": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056854": {
+  "status": "loading",
+  "problem": false
+ },
+ "00056857": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056852": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056851": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056853": {
+  "status": "planned",
+  "problem": false
+ },
+ "Москва день в день|50": {
+  "status": "planned",
+  "problem": false
+ },
+ "Москва день в день|51": {
+  "status": "planned",
+  "problem": false
+ },
+ "00056844": {
+  "status": "planned",
+  "problem": false
+ },
+ "Питер|53": {
   "status": "planned",
   "problem": false
  }
