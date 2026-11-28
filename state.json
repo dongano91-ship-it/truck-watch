@@ -96,47 +96,47 @@
   "problem": false
  },
  "00056737": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00056839": {
-  "status": "loading",
+  "status": "departed",
   "problem": false
  },
  "00056835": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056836": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056845": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056846": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056849": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056862": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056864": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056865": {
-  "status": "arrived",
+  "status": "departed",
   "problem": false
  },
  "00056738": {
-  "status": "arrived",
+  "status": "loading",
   "problem": false
  },
  "00053841": {
@@ -144,35 +144,35 @@
   "problem": true
  },
  "00056850": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00056856": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00056854": {
-  "status": "loading",
+  "status": "arrived",
   "problem": false
  },
  "00056857": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00056852": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00056851": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "00056853": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "Москва день в день|50": {
-  "status": "planned",
+  "status": "arrived",
   "problem": false
  },
  "Москва день в день|51": {
